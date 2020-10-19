@@ -87,3 +87,29 @@ table, th, td {
     border: 10px solid black;
     border-color: darksalmon;
   }
+
+  /* About*/
+#about {
+    padding-top: 50px;
+    height: 100vh;
+}
+#about img{
+    float: left;
+    text-align: center;
+    display: block;
+    height: 350px;
+    width: 372px;
+    padding-right: 15px;
+}
+#about .clearfix {
+    overflow: auto;
+  }
+
+  h1 {
+    text-align: center;
+}
+
+#experience{
+  padding-top: 50px;
+  height: 100vh;
+}
