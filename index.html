@@ -2,9 +2,145 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">   
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="topnav">
+            <a>Brian Cisneros</a>
+            <a href="#home">Hero</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#about">Acerca de Mi</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contacto</a>
+          </div>
+        </div>
+        <div id="home", class="slideshow-container">
 
+            <div class="mySlides fade">
+                <img src="imagenes/img_nature_wide.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="imagenes/img_lights_wide.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="imagenes/img_mountains_wide.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <hr>
+        <div id="experience">
+            <h1>Experiencia</h1>
+                        
+            <table id="exp">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Desarrollado en:</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>Movatik Apps</th>
+                    <td>2019</th>
+                    <td border=3 height=100 width=100>HTML, CSS, JavaScript</th>
+                    <td><a href="http://apps.movatik.com/">http://apps.movatik.com/</a></th>
+                </tr>
+                <tr>
+                    <td>GTA Web</th>
+                    <td>2019</th>
+                    <td border=4 height=100 width=300>HTML, CSS, JavaScript</th>
+                    <td><a href="http://gtaweblb-855305335.us-east-1.elb.amazonaws.com/Login?ReturnUrl=%2F">http://gtaweblb-855305335.us-east-1.elb.amazonaws.com/Login?ReturnUrl=%2F</a></th>
+                </tr>
+                <!-- A partir de aqui son Inventados, cosas de otras personas en GitHub para la referencia -->
+                <tr>
+                    <td>Juego de Cartas</th>
+                    <td>2013</th>
+                    <td border=4 height=100 width=300>Java</th>
+                    <td><a href="https://github.com/joroldan/Practica1/blob/master/Cola.java">https://github.com/joroldan/Practica1/blob/master/Cola.java</a></th>
+                </tr>
+                <tr>
+                    <td>Calculadora</th>
+                    <td>2016</th>
+                    <td border=4 height=100 width=300>C++</th>
+                    <td><a href="https://github.com/davbolan/Calculadora-v1">https://github.com/davbolan/Calculadora-v1</a></th>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div id="about">
+            <h1>Acerca de Mi!</h1>
+            <div class="clearfix">
+                <img src="/imagenes/img_brian.jpg" alt="Brian Cisneros">
+                <a>Me llamo Brian Cisneros, soy estudiante de la Universidad Metropolitana de Ingenieria de Sistemas, 
+                entre mis objetivos a corto plazo<br> se encuentra graduarme para poder comenzar a ejercer en la carrera.
+                Pensando un poco mas a futuro me veo trabajando en USA en una empresa de alcance global tal como Apple
+                para luego poder montar mi propia firma de cybersecurity y crecer hasta tener un alcance global.<br><br>
+                Entre mis motivaciones para estudiar la carrera esta mi papa que tambien la estudio y por eso siempre
+                me vi involucrado en el mundo de la tecnologia, aunque en los ultimos años siempre se enfoco mas en el
+                area de Hardware y viendo diferentes programas yo me quise involucrar un poco mas en el area de seguridad,
+                siempre trabajando mas que todo desde el lado de vista de Hardware, por eso creo que esta carrera es la ideal
+                porque me va a dar ambos puntos de vistas para el futuro. <br><br>
+                Yo soy una persona muy activa, siempre estoy buscando algo que hacer algo que inventar, por eso siempre me han
+                encantado los deportes, juego Baseball, Softball, Basketball, Tennis, Golf, entre otros. Aunque no soy muy fan 
+                de lanzarme a la naturaleza siempre me ha parecido interesante la idea de acampar en un sito como el Santo Angel
+                o el Roraima pero hay que empezar desde abajo y nada mejor que el viejo Avila para eso!
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <div id="skills">
+            <h1>Habilidades</h1>
+            <section id="skills">
+                <div class="divskills">
+                </div>
+            </section>
+        </div>
+        <hr>
+        <div id="contact">
+            <h1>Contactame!!</h1>
+            <div class="container">
+                <form action="#home">
+                  <label for="fname">Nombre y Apellido</label>
+                  <input type="text" id="fname" name="firstname">
+                  <label for="lname">E-Mail</label>
+                  <input type="text" id="email" name="email">
+                  <label for="subject">Comentarios</label>
+                  <textarea id="subject" name="subject"></textarea>
+                  <button class="button1">Enviar</button>
+
+                  <a href="https://www.twitter.com" target="_blank" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i>Twitter
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i>Facebook
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" class="insta btn">
+                    <i class="fa fa-instagram fa-fw"></i>Instagram
+                  </a>
+                  <a href="https://web.whatsapp.com" target="_blank" class="whats btn">
+                    <i class="fa fa-whatsapp fa-fw"></i>Whatsapp
+                  </a>
+                </form>
+              </div>
+        </div>
+        <br>
+        <script src="main.js"></script>
     </body>
-</html> 
+    <footer>
+        <p>Autor: Brian Cisneros<br>
+        <a href="brian.cisneros@correo.unimet.edu.ve">brian.cisneros@correo.unimet.edu.ve</a></p>
+    </footer>
+</html>
