@@ -190,3 +190,15 @@ input:hover,
     background-color: #45a049;
     color: white;
   }
+
+  #skills{
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.barra1 { 
+    background-color: salmon;
+    width: 50px;
+    margin-left: 350px;
+    height: 50px;
+}
